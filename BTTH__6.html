@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thực hành Flexbox</title>
+  <link rel="stylesheet" href="style_TH6.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Điều hướng chính">
+      <a class="logo" href="#">Flex<span>Lab</span></a>
+
+      <ul class="nav-links">
+        <li><a href="#trang-chu">Trang chủ</a></li>
+        <li><a href="#bai-tap">Bài tập</a></li>
+        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+      </ul>
+
+      <a class="login-button" href="#dang-nhap">Đăng nhập</a>
+    </nav>
+  </header>
+
+  <main class="container" id="trang-chu">
+    <section class="intro">
+      <p class="eyebrow">HTML &amp; CSS · FLEXBOX</p>
+      <h1>Thực hành: Code và quan sát, đừng chỉ học thuộc</h1>
+      <p class="intro-text">
+        Cùng luyện tập cách sắp xếp phần tử bằng Flexbox. Hãy thay đổi kích thước
+        trình duyệt để quan sát bố cục thích ứng như thế nào.
+      </p>
+    </section>
+
+    <section class="exercise" id="bai-tap">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <div>
+          <h2>Bài tập 1: Thanh Navigation</h2>
+          <p>Tạo thanh điều hướng có logo bên trái, các liên kết ở giữa và nút Đăng nhập bên phải.</p>
+        </div>
+      </div>
+
+      <div class="demo-panel">
+        <p class="demo-label">KẾT QUẢ MẪU</p>
+        <nav class="demo-navbar" aria-label="Thanh điều hướng minh họa">
+          <a class="demo-logo" href="#">NOVA<span>.</span></a>
+          <ul class="demo-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+          <a class="demo-login" href="#login">Đăng nhập</a>
+        </nav>
+      </div>
+
+      <div class="hint">
+        <strong>Gợi ý CSS</strong>
+        <code>display: flex;</code>
+        <code>justify-content: space-between;</code>
+        <code>align-items: center;</code>
+      </div>
+    </section>
+
+    <section class="exercise">
+      <div class="section-heading">
+        <span class="section-number">02</span>
+        <div>
+          <h2>Bài tập 2: Lưới thẻ thông tin</h2>
+          <p>Tạo container chứa 4 thẻ, khoảng cách đều nhau. Khi thu nhỏ trình duyệt, các thẻ tự động rớt dòng.</p>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <article class="info-card">
+          <div class="card-icon">⌘</div>
+          <p class="card-tag">01 / LEARN</p>
+          <h3>Học tập</h3>
+          <p>Chủ động khám phá kiến thức mới và xây dựng nền tảng vững chắc.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon">✦</div>
+          <p class="card-tag">02 / CREATE</p>
+          <h3>Sáng tạo</h3>
+          <p>Biến ý tưởng thành sản phẩm bằng tư duy thiết kế và công nghệ.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon">↗</div>
+          <p class="card-tag">03 / GROW</p>
+          <h3>Phát triển</h3>
+          <p>Không ngừng thử nghiệm, cải thiện và tiến bộ qua từng ngày.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon">◎</div>
+          <p class="card-tag">04 / CONNECT</p>
+          <h3>Kết nối</h3>
+          <p>Chia sẻ kiến thức, hợp tác và cùng nhau tạo nên giá trị.</p>
+        </article>
+      </div>
+
+      <div class="hint">
+        <strong>Gợi ý CSS</strong>
+        <code>display: flex;</code>
+        <code>gap: 20px;</code>
+        <code>flex-wrap: wrap;</code>
+      </div>
+    </section>
+
+    <aside class="process" id="gioi-thieu">
+      <h2>Quy trình thực hành</h2>
+      <ol>
+        <li>Viết HTML cấu trúc.</li>
+        <li>Khai báo <code>display: flex;</code> cho phần tử bọc ngoài.</li>
+        <li>Mở DevTools bằng phím <kbd>F12</kbd>.</li>
+        <li>Bật / tắt các thuộc tính Flexbox ngay trên trình duyệt.</li>
+        <li>Quan sát và giải thích vì sao layout thay đổi.</li>
+      </ol>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>Thực hành Flexbox · Học bằng cách làm</p>
+  </footer>
+</body>
+</html>
